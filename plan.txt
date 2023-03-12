@@ -1,0 +1,16 @@
+1.Complete Frontend Design
+2.Apply Business Logic
+3.Api Implementation
+
+Part One - Frontend Design - Homepage Design 
+1.Header Top Component Design
+2.Header Main Component Design
+3.Header Navbar Design
+4.Footer Design
+5.Slider Design
+6.Product List View Design
+7.Category Grid View Design
+8.Product grid View Design
+9.Client Testimonial Design
+10.Brand Slider Design
+11.Blog Section Design

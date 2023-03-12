@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.custom-drop-shadow {
+    @apply drop-shadow-[0_7px_7px_rgba(0,0,0,0.40)];
+}
+:root {
+    --primary: #3f52ca;
+}
+.main-banner .slick-dots {
+    left: 30%;
+    bottom: 10% !important;
+}
+.main-banner > .slick-slider > .slick-dots li {
+    width: 15px !important;
+    height: 5px !important;
+    background: #c7c7c7;
+}
+
+.main-banner > .slick-slider > .slick-dots li.slick-active {
+    width: 30px !important;
+    background: var(--primary);
+}
+
+.main-banner .slick-dots li button:before {
+    display: none;
+}
+.main-banner .slick-prev,
+.main-banner .slick-next {
+    z-index: 99 !important;
+    font-size: 20px !important;
+}
+.main-banner .slick-prev {
+    left: 20px !important;
+}
+.main-banner .slick-next {
+    right: 20px !important;
+}
+.main-banner .slick-prev:before,
+.main-banner .slick-next:before {
+    font-size: 30px !important;
+}
+.testimonial .slick-dots button:before {
+    opacity: 0.75;
+    color: var(--primary);
+    font-size: 10px;
+}
+.testimonial .slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: var(--primary);
+}
+.testimonial .slick-slide > div {
+    margin: 0 10px;
+}
+.testimonial .slick-list {
+    margin: 0 -10px;
+}
+.brand .slick-slide > div {
+    margin: 0 10px;
+}
+.brand .slick-list {
+    margin: 0 -10px;
+}
+.brand .slick-prev {
+    left: 15px;
+    z-index: 99;
+}
+
+.brand .slick-next {
+    right: 5px;
+    z-index: 99;
+}
+
+.blog-slider .slick-slide > div {
+    margin: 0 10px;
+}
+.blog-slider .slick-list {
+    margin: 0 -10px;
+}
+.blog-slider > .slick-prev,
+.blog-slider > .slick-next {
+    z-index: 99 !important;
+    font-size: 20px !important;
+}
+.blog-slider > .slick-prev {
+    left: 18px !important;
+}
+.blog-slider > .slick-next {
+    right: 18px !important;
+}
+.blog-slider > .slick-prev:before,
+.blog-slider > .slick-next:before {
+    font-size: 30px !important;
+}
+.blog-slider > .slick-prev:before,
+.blog-slider > .slick-next:before {
+    opacity: 1;
+    color: var(--primary);
+}
