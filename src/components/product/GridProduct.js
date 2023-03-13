@@ -5,7 +5,7 @@ import { AiFillHeart } from "react-icons/ai";
 import BtnFull from "../buttons/BtnFull";
 const GridProduct = () => {
     return (
-        <div className="relative bg-white p-6 rounded-md border-2 border-transparent transition-all duration-500 custom-drop-shadow hover:border-primary hover:border-2 overflow-hidden">
+        <div className="relative bg-white p-4 rounded-md border-2 border-transparent transition-all duration-500 custom-drop-shadow hover:border-primary hover:border-2 overflow-hidden">
             <Link href="/product-details">
                 <Image
                     src="/assets/images/products/p1.png"
@@ -15,7 +15,7 @@ const GridProduct = () => {
                     className="bg-primary-light rounded-md hover:scale-105 transition duration-300"
                 />
             </Link>
-            <span className="badge absolute top-8 left-8 bg-white text-primary p-2 text-xs rounded-full border-primary border hover:bg-primary hover:text-white transition duration-300 ease-in">
+            <span className="badge absolute top-6 left-6 bg-white text-primary p-2 text-xs rounded-full border-primary border hover:bg-primary hover:text-white transition duration-300 ease-in">
                 <AiFillHeart size={26} />
             </span>
 
@@ -32,7 +32,10 @@ const GridProduct = () => {
                 </div>
 
                 <div className="mt-4">
-                    <BtnFull text="ADD TO CART" className="rounded-xl" />
+                    <BtnFull
+                        text="ADD TO CART"
+                        className="rounded-xl bg-primary"
+                    />
                 </div>
             </div>
         </div>

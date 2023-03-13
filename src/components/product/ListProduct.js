@@ -5,7 +5,7 @@ import { AiFillHeart } from "react-icons/ai";
 import { BsCartPlusFill } from "react-icons/bs";
 const ListProduct = () => {
     return (
-        <div className="flex gap-4 bg-white p-4 rounded border border-transparent transition-all duration-500 hover:border hover:border-primary hover:shadow-xl group">
+        <div className="flex gap-4 bg-white p-4 rounded border border-transparent custom-drop-shadow transition-all duration-500 hover:border hover:border-primary group">
             <Image
                 src="/assets/images/products/p1.png"
                 height={150}

@@ -3,9 +3,11 @@ import React from "react";
 const Select = ({ name, id, data, label }) => {
     return (
         <div className="w-full">
-            <label htmlFor={id} className="font-semibold">
-                {label}
-            </label>
+            {label && (
+                <label htmlFor={id} className="font-semibold">
+                    {label}
+                </label>
+            )}
             <select
                 name={name}
                 id={id}

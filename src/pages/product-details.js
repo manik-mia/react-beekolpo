@@ -153,7 +153,7 @@ const ProductDetails = () => {
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                 <BtnFull text="Add To Cart" />
                                 <BtnFull
-                                    className="bg-pink-500 rounded"
+                                    className="bg-[#4B035D] rounded"
                                     text="Buy Now"
                                 />
                             </div>
