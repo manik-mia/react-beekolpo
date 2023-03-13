@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
     return (
-        <ul className="navbar w-3/4 flex space-x-6">
+        <ul className="hidden md:flex w-3/4 space-x-6 overflow-scroll md:overflow-hidden">
             <li>
                 <a
                     href=""

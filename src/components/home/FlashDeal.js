@@ -5,10 +5,12 @@ import BrowseMoreBtn from "../buttons/BrowseMoreBtn";
 const FlashDeal = () => {
     return (
         <div className="container py-10">
-            <div className="flex items-center justify-between my-4">
-                <div className="flex">
-                    <h3 className="text-2xl font-bold">Mega Flash Deals</h3>
-                    <div className="deal-time bg-white rounded p-2 ml-8">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between my-4">
+                <div className="flex flex-col md:flex-row">
+                    <h3 className="w-full text-2xl font-bold">
+                        Mega Flash Deals
+                    </h3>
+                    <div className="w-full bg-white rounded p-2 md:ml-8 my-2 md:my-0">
                         <span className="text-sm">Ends in</span>
                         <span className="bg-primary ml-2 text-white text-sm py-1 px-2 rounded-sm">
                             120 H

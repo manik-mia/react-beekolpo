@@ -4,8 +4,8 @@ import React from "react";
 const SingleProduct = () => {
     return (
         <div className="bg-[url('/assets/images/bg/single-bg.png')] bg-center bg-cover bg-no-repeat">
-            <div className="container grid grid-cols-2 gap-8">
-                <div className="content py-6">
+            <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="py-6">
                     <h2 className="text-3xl font-bold">New Style Fashion</h2>
                     <p className="text-sm w-5/6 mt-4">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.

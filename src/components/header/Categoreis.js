@@ -17,13 +17,15 @@ const Categoreis = () => {
                 >
                     <div className="toggler flex items-center">
                         <FaBars size="20" />
-                        <span className="ml-4">Browse Categoreis</span>
+                        <span className="ml-4 hidden md:block">
+                            Browse Categoreis
+                        </span>
                     </div>
                     <MdOutlineKeyboardArrowDown size={20} className="" />
                 </div>
 
                 <ul
-                    className={`absolute w-full  transition-all duration-500  bg-white  ease-in-out ${
+                    className={`absolute w-52 md:w-full  transition-all duration-500  bg-white  ease-in-out ${
                         showCategory ? "z-10" : "hidden z-0"
                     }`}
                 >

@@ -6,10 +6,10 @@ import BrowseMoreBtn from "../buttons/BrowseMoreBtn";
 const TopCategoryProducts = () => {
     return (
         <div className="container py-10">
-            <div className="flex items-center justify-between my-4">
+            <div className="flex flex-col md:flex-row items-center md:justify-between my-4">
                 <h3 className="text-2xl font-bold">Top Categories Product</h3>
 
-                <div className="categories flex items-center space-x-4">
+                <div className="categories flex items-center  space-x-4 overflow-scroll md:overflow-hidden">
                     <Link
                         href="#"
                         className="text-primary border-primary border-b-2 font-semibold"
@@ -58,10 +58,11 @@ const TopCategoryProducts = () => {
                     >
                         Toys
                     </Link>
-                    <BrowseMoreBtn link="#" text="Browse All" />
                 </div>
+
+                <BrowseMoreBtn link="#" text="Browse All" />
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-4">
                 <GridProduct />
                 <GridProduct />
                 <GridProduct />

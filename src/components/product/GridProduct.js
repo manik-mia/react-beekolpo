@@ -9,8 +9,8 @@ const GridProduct = () => {
             <Link href="/product-details">
                 <Image
                     src="/assets/images/products/p1.png"
-                    height={300}
-                    width={300}
+                    height={450}
+                    width={450}
                     alt="Product 1"
                     className="bg-primary-light rounded-md hover:scale-105 transition duration-300"
                 />

@@ -31,7 +31,7 @@ const ListProduct = () => {
                 <div className="flex gap-4 mt-4">
                     <button
                         type="submit"
-                        className="flex gap-2 items-center justify-center bg-primary w-full text-white py-1 rounded-md"
+                        className="flex gap-1 md:gap-2 items-center justify-center bg-primary w-full text-white py-1 rounded-md"
                     >
                         <BsCartPlusFill />
                         <span className="text-sm">ADD TO CART</span>

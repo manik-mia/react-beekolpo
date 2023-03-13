@@ -42,8 +42,8 @@ const CartPage = () => {
                 </div>
             </div>
             <div className="container mt-4">
-                <div className="flex gap-4">
-                    <div className="w-4/6">
+                <div className="flex flex-col md:flex-row gap-4">
+                    <div className="w-full md:w-4/6">
                         <form action="">
                             <div className="flex justify-between p-4 bg-gray-100 rounded mb-2 text-sm">
                                 <div className="flex items-center gap-4 w-6/12">
@@ -86,7 +86,7 @@ const CartPage = () => {
                             </Link>
                         </div>
                     </div>
-                    <div className="w-2/6">
+                    <div className="w-full md:w-2/6">
                         <CartTotal text="next to checkout" />
                     </div>
                 </div>

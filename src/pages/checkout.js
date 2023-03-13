@@ -25,11 +25,11 @@ const Checkout = () => {
                 </div>
             </div>
             <form action="">
-                <div className="container flex mt-4 gap-8">
+                <div className="container flex mt-4 gap-8 mb-4 md:mb-0">
                     <div className="w-full">
-                        <div className="flex gap-4">
-                            <div className="w-1/2">
-                                <div className="flex justify-between items-center">
+                        <div className="flex flex-col md:flex-row gap-4">
+                            <div className="w-full md:w-1/2">
+                                <div className="flex  flex-col md:flex-row justify-between items-center">
                                     <h2 className="uppercase text-lg font-bold mb-2">
                                         Shipping address
                                     </h2>
@@ -114,7 +114,7 @@ const Checkout = () => {
                                     placeholder="Your Notes"
                                 />
                             </div>
-                            <div className="w-1/2">
+                            <div className="w-full md:w-1/2">
                                 {!hide && (
                                     <>
                                         <h2 className="uppercase text-lg font-bold mb-2">

@@ -18,10 +18,10 @@ const ProductDetails = () => {
     const sizes = ["sm", "md", "lg", "xl", "2xl", "2xl"];
     return (
         <div className="py-8 bg-white">
-            <div className="container flex justify-between gap-6">
-                <div className="w-9/12">
-                    <div className="flex justify-between gap-6">
-                        <div className="w-1/2 overflow-hidden">
+            <div className="container flex flex-col md:flex-row justify-between gap-6">
+                <div className="w-full md:w-9/12">
+                    <div className="flex flex-col md:flex-row justify-between gap-6">
+                        <div className="w-full md:w-1/2 overflow-hidden">
                             <div className="w-full bg-primary-light rounded-md">
                                 <Image
                                     src="/assets/images/products/p1.png"
@@ -55,7 +55,7 @@ const ProductDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="w-1/2">
+                        <div className="w-full md:w-1/2">
                             <nav class="flex py-3 " aria-label="Breadcrumb">
                                 <ul className="inline-flex gap-2">
                                     <li className="flex gap-1 items-center">
@@ -425,7 +425,7 @@ const ProductDetails = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-3/12 bg-gray-200">
+                <div className="w-full md:w-3/12 bg-gray-200">
                     <h3 className="text-lg uppercase text-center font-bold p-4">
                         top rated product
                     </h3>
