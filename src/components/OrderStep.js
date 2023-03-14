@@ -47,7 +47,7 @@ const OrderStep = ({ step1, step2, step3, step4 }) => {
 
                 <div className="flex flex-col justify-center items-center w-1/4">
                     <h5
-                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px]   ${
+                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px]  ml-4 ${
                             step4
                                 ? "bg-primary border-primary text-white "
                                 : "border-primary-light "

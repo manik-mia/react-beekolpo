@@ -3,7 +3,7 @@ import BtnFull from "../buttons/BtnFull";
 
 const CartTotal = ({ text }) => {
     return (
-        <div className="rounded-md bg-primary-light py-4">
+        <div className="rounded-md bg-gray-200 py-4">
             <div className="px-4 space-y-4">
                 <h2 className="font-bold text-lg">Cart Total</h2>
                 <div className="flex justify-between font-semibold">
