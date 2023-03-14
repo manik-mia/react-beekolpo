@@ -6,7 +6,7 @@ const OrderStep = ({ step1, step2, step3, step4 }) => {
             <div className="flex gap-1">
                 <div className="flex flex-col justify-center items-center w-1/4">
                     <h5
-                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[204px]  after:h-2  ${
+                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[198px]  after:h-2  ${
                             step1
                                 ? "bg-primary border-primary text-white after:bg-primary"
                                 : "border-primary-light after:bg-primary-light"
@@ -19,7 +19,7 @@ const OrderStep = ({ step1, step2, step3, step4 }) => {
                 </div>
                 <div className="flex flex-col justify-center items-center w-1/4">
                     <h5
-                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[204px]  after:h-2  ${
+                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[198px]  after:h-2  ${
                             step2
                                 ? "bg-primary border-primary text-white after:bg-primary"
                                 : "border-primary-light after:bg-primary-light"
@@ -33,7 +33,7 @@ const OrderStep = ({ step1, step2, step3, step4 }) => {
 
                 <div className="flex flex-col justify-center items-center w-1/4">
                     <h5
-                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[204px]  after:h-2  ${
+                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] after:absolute after:top-[15px] after:left-[37px] after:content-[''] after:w-[198px]  after:h-2  ${
                             step3
                                 ? "bg-primary border-primary text-white after:bg-primary"
                                 : "border-primary-light after:bg-primary-light"
@@ -47,7 +47,7 @@ const OrderStep = ({ step1, step2, step3, step4 }) => {
 
                 <div className="flex flex-col justify-center items-center w-1/4">
                     <h5
-                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px]  ml-4 ${
+                        className={`relative flex items-center justify-center rounded-full  border-2  px-[14px] py-[6px] ${
                             step4
                                 ? "bg-primary border-primary text-white "
                                 : "border-primary-light "

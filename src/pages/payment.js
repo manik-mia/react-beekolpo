@@ -47,11 +47,13 @@ const Payment = () => {
                 </div>
             </div>
             <form action="">
+                <div className="container">
+                    <h2 className="text-2xl font-semibold my-4">
+                        Choose Your Payment Method
+                    </h2>
+                </div>
                 <div className="container flex my-4 gap-8">
                     <div className="w-2/3">
-                        <h2 className="text-2xl font-semibold my-4">
-                            Choose Your Payment Method
-                        </h2>
                         <div className="grid grid-cols-2 gap-4">
                             {paymentGateways &&
                                 paymentGateways.map((item) => (
@@ -85,7 +87,7 @@ const Payment = () => {
                         </div>
                     </div>
                     <div className="w-2/3">
-                        <CartTotal text="Pay Now" />
+                        <CartTotal text="Pay Now" applyCoupon />
                     </div>
                 </div>
             </form>

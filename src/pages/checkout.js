@@ -108,11 +108,6 @@ const Checkout = () => {
                                     placeholder="Your Zip Code/Post Code *"
                                     type="text"
                                 />
-                                <Textarea
-                                    id="notes"
-                                    name="notes"
-                                    placeholder="Your Notes"
-                                />
                             </div>
                             <div className="w-full md:w-1/2">
                                 {!hide && (
@@ -179,11 +174,18 @@ const Checkout = () => {
                                             placeholder="Your Zip Code/Post Code *"
                                             type="text"
                                         />
-                                        <div className="mt-2">
-                                            <BtnFull text="Procssed to pay" />
-                                        </div>
                                     </>
                                 )}
+                            </div>
+                        </div>
+                        <div className="w-full">
+                            <Textarea
+                                id="notes"
+                                name="notes"
+                                placeholder="Your Notes"
+                            />
+                            <div className="w-1/2 mx-auto mb-4">
+                                <BtnFull text="Procssed to pay" />
                             </div>
                         </div>
                     </div>
