@@ -292,7 +292,7 @@ const Shop = () => {
 
   return (
     <div className="mx-10 ">
-      <div className="flex items-center justify-center ">
+      <div className="flex items-center justify-center mb-5 ">
         <Image src={banner} alt="banner" width={1200} height={800} />
       </div>
 
@@ -787,8 +787,8 @@ const Shop = () => {
 
         <div className="">
           {/* upper filter section */}
-          <div className="flex justify-between">
-            <div className="flex items-center gap-2 border border-red-400">
+          <div className="md:flex justify-between">
+            <div className="md:flex items-center  gap-2">
               <h2 className="font-semibold"> Filtered by:</h2>
               <button className="border border-gray-400 rounded-full px-2 ">
                 Home & Garden
@@ -801,9 +801,9 @@ const Shop = () => {
             </div>
 
             <div className=" ">
-              <div className="flex items-center   border-2 border-green-400 w-full gap-2">
+              <div className="md:flex items-center text-center    w-full gap-2">
                 {/* <h2 className="text-[#585858]">Showing 1–30 of 2537 results</h2> */}
-                <h2 className="font-semibold">Sort by:</h2>
+                <h1 className="font-semibold ">Sort by:</h1>
                 {/* 1st dropdown */}
                 <div className="relative w-full lg:max-w-sm">
                   <select className="w-full  text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
