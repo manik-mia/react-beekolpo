@@ -713,7 +713,7 @@ const Shop = () => {
                   className="h-20 w-20"
                 />
 
-                <div className="py-2">
+                <div className="py-1">
                   <h1 className="font-semibold mb-2">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
                   <Image src={star} alt="ratig" className="mb-2" />
@@ -733,7 +733,7 @@ const Shop = () => {
                   className="h-20 w-20"
                 />
 
-                <div className="py-2">
+                <div className="py-1">
                   <h1 className="font-semibold mb-2">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
                   <Image src={star} alt="ratig" className="mb-2" />
@@ -753,7 +753,7 @@ const Shop = () => {
                   className="h-20 w-20"
                 />
 
-                <div className="py-2">
+                <div className="py-1">
                   <h1 className="font-semibold mb-2">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
                   <Image src={star} alt="ratig" className="mb-2" />
@@ -773,7 +773,7 @@ const Shop = () => {
                   className="h-20 w-20"
                 />
 
-                <div className="py-2">
+                <div className="py-1">
                   <h1 className="font-semibold mb-2">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
                   <Image src={star} alt="ratig" className="mb-2" />
@@ -787,8 +787,8 @@ const Shop = () => {
 
         <div className="">
           {/* upper filter section */}
-          <div>
-            <div className="flex items-center gap-1 border border-red-400">
+          <div className="flex justify-between">
+            <div className="flex items-center gap-2 border border-red-400">
               <h2 className="font-semibold"> Filtered by:</h2>
               <button className="border border-gray-400 rounded-full px-2 ">
                 Home & Garden
@@ -800,38 +800,40 @@ const Shop = () => {
               <button className="text-[#016EEF]">Clear All</button>
             </div>
 
-            <div className="flex items-center   border-2 border-green-400 w-full ">
-              {/* <h2 className="text-[#585858]">Showing 1–30 of 2537 results</h2> */}
-              <h2 className="font-semibold">Sort by:</h2>
-              {/* 1st dropdown */}
-              <div className="relative w-full lg:max-w-sm">
-                <select className="w-3/4  text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
-                  <option>Default Sorting</option>
-                  <option className="text-[#FF5757]">Default Sorting</option>
-                  <option>Top Selling</option>
-                  <option>latest first</option>
-                  <option>oldest first</option>
-                  <option>higher Price first</option>
-                  <option>lower Price first</option>
-                </select>
-              </div>
-              {/* 2nd dropdown */}{" "}
-              <div className="relative w-full lg:max-w-sm">
-                <select className="w-3/6  text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
-                  <option>All Star</option>
-                  <option className="text-[#FF5757]">All Star</option>
-                  <option>5 Star</option>
-                  <option>4 Star</option>
-                  <option>3 Star</option>
-                  <option>2 Star</option>
-                  <option>1 Star</option>
-                </select>
-              </div>
-              {/* 3rd dropdown */}{" "}
-              <div className="relative w-full lg:max-w-sm">
-                <select className="w-3/6 text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
-                  <option>Show 30</option>
-                </select>
+            <div className=" ">
+              <div className="flex items-center   border-2 border-green-400 w-full gap-2">
+                {/* <h2 className="text-[#585858]">Showing 1–30 of 2537 results</h2> */}
+                <h2 className="font-semibold">Sort by:</h2>
+                {/* 1st dropdown */}
+                <div className="relative w-full lg:max-w-sm">
+                  <select className="w-full  text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
+                    <option>Default Sorting</option>
+                    <option className="text-[#FF5757]">Default Sorting</option>
+                    <option>Top Selling</option>
+                    <option>latest first</option>
+                    <option>oldest first</option>
+                    <option>higher Price first</option>
+                    <option>lower Price first</option>
+                  </select>
+                </div>
+                {/* 2nd dropdown */}{" "}
+                <div className="relative w-full lg:max-w-sm">
+                  <select className="w-full  text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
+                    <option>All Star</option>
+                    <option className="text-[#FF5757]">All Star</option>
+                    <option>5 Star</option>
+                    <option>4 Star</option>
+                    <option>3 Star</option>
+                    <option>2 Star</option>
+                    <option>1 Star</option>
+                  </select>
+                </div>
+                {/* 3rd dropdown */}{" "}
+                <div className="relative w-full lg:max-w-sm">
+                  <select className="w-full text-gray-500 bg-white border rounded-md shadow-sm outline-none appearance-none focus:border-indigo-600">
+                    <option>Show 30</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
