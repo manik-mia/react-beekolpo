@@ -1,78 +1,51 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import Image from "next/image";
+import React, { useState } from "react";
+import Glider from "react-glider";
+import "glider-js/glider.min.css";
+const images = [
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+    "/assets/images/products/p2.png",
+    "/assets/images/products/p1.png",
+];
+const ProductDetailSlider = () => {
+    const [mainImage, setMainImage] = useState(images[0]);
 
-export default class ProductDetailSlider extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            nav1: null,
-            nav2: null,
-        };
-    }
-
-    componentDidMount() {
-        this.setState({
-            nav1: this.slider1,
-            nav2: this.slider2,
-        });
-    }
-
-    render() {
-        return (
-            <div>
-                <h2>Slider Syncing (AsNavFor)</h2>
-                <h4>First Slider</h4>
-                <Slider
-                    asNavFor={this.state.nav2}
-                    ref={(slider) => (this.slider1 = slider)}
-                >
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                </Slider>
-                <h4>Second Slider</h4>
-                <Slider
-                    asNavFor={this.state.nav1}
-                    ref={(slider) => (this.slider2 = slider)}
-                    slidesToShow={3}
-                    swipeToSlide={true}
-                    focusOnSelect={true}
-                >
-                    <div>
-                        <h3>1</h3>
-                    </div>
-                    <div>
-                        <h3>2</h3>
-                    </div>
-                    <div>
-                        <h3>3</h3>
-                    </div>
-                    <div>
-                        <h3>4</h3>
-                    </div>
-                    <div>
-                        <h3>5</h3>
-                    </div>
-                    <div>
-                        <h3>6</h3>
-                    </div>
-                </Slider>
+    return (
+        <div>
+            <Image
+                src={mainImage}
+                alt="product name"
+                width="500"
+                height="500"
+            />
+            <div className="mt-2">
+                <Glider draggable hasArrows slidesToShow={6} slidesToScroll={3}>
+                    {images &&
+                        images.map((item, index) => (
+                            <Image
+                                src={item}
+                                key={index}
+                                width={100}
+                                height={100}
+                                alt="Product Image"
+                                className="mx-1"
+                                onClick={() => setMainImage(item)}
+                            />
+                        ))}
+                </Glider>
             </div>
-        );
-    }
-}
+        </div>
+    );
+};
+
+export default ProductDetailSlider;

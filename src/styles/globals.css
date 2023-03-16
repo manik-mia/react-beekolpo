@@ -97,3 +97,11 @@
     opacity: 1;
     color: var(--primary);
 }
+.glider-prev {
+    left: 5px !important;
+    color: var(--primary) !important;
+}
+.glider-next {
+    right: 5px !important;
+    color: var(--primary) !important;
+}

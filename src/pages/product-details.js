@@ -12,6 +12,7 @@ import React, { useState } from "react";
 import Select from "@/components/inputs/Select";
 import BtnFull from "@/components/buttons/BtnFull";
 import Accordion from "@/components/accordion/Accordion";
+import ProductDetailSlider from "@/components/product/ProductDetailSlider";
 const ProductDetails = () => {
     const [open, setOpen] = useState("description");
     const colors = ["Red", "Green", "Blue"];
@@ -22,13 +23,8 @@ const ProductDetails = () => {
                 <div className="w-full md:w-9/12">
                     <div className="flex flex-col md:flex-row justify-between gap-6">
                         <div className="w-full md:w-1/2 overflow-hidden">
-                            <div className="w-full bg-primary-light rounded-md">
-                                <Image
-                                    src="/assets/images/products/p1.png"
-                                    alt="Product Name"
-                                    width="700"
-                                    height="700"
-                                />
+                            <div className="w-full  rounded-md">
+                                <ProductDetailSlider />
                             </div>
                             <div className="flex gap-4 mt-4">
                                 <div className="flex items-center border-2 border-gray-200 p-2 gap-2 rounded-md">
