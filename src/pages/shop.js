@@ -4,6 +4,7 @@ import banner from "../../public/assets/images/shop/Banner.png";
 import test from "../../public/assets/images/shop/test.png";
 import star from "../../public/assets/images/shop/Group.png";
 import shoe from "../../public/assets/images/shop/show.png";
+
 // import { Input } from "postcss";
 
 const Shop = () => {
@@ -299,38 +300,39 @@ const Shop = () => {
       <div className="grid grid-cols-1 md:grid-cols-[1fr_4fr]  gap-10  w-full ">
         {/* left side */}
         <div>
+          {/* item section */}
           <div className="">
             <h1 className="text-xl font-semibold"> All Categories</h1>
             <hr className="border border-black mb-4 mt-2" />
-            <button className="text-[#585858]">Fashion</button> <br />
-            <button className="text-[#FF5757]">Home & Garden</button>
+            <button className="text-[#585858] mb-3">Fashion</button> <br />
+            <button className="text-[#FF5757] mb-3">Home & Garden</button>
             <br />
-            <button className="text-[#585858]">Electronics</button>
+            <button className="text-[#585858] mb-3">Electronics</button>
             <br />
-            <button className="text-[#585858]">Furniture</button>
+            <button className="text-[#585858] mb-3">Furniture</button>
             <br />
-            <button className="text-[#585858]">Healthy & Beauty</button>
+            <button className="text-[#585858] mb-3">Healthy & Beauty</button>
             <br />
-            <button className="text-[#585858]">Gift Ideas</button>
+            <button className="text-[#585858] mb-3">Gift Ideas</button>
             <br />
-            <button className="text-[#585858]">Toy & Games</button>
+            <button className="text-[#585858] mb-3">Toy & Games</button>
             <br />
-            <button className="text-[#585858]">Cooking</button>
+            <button className="text-[#585858] mb-3">Cooking</button>
             <br />
-            <button className="text-[#585858]">Smart Phones</button>
+            <button className="text-[#585858] mb-3">Smart Phones</button>
             <br />
-            <button className="text-[#585858]">Cameras & Photo</button>
+            <button className="text-[#585858] mb-3">Cameras & Photo</button>
             <br />
-            <button className="text-[#585858]"></button>
+            <button className="text-[#585858] mb-3"></button>
             <br />
           </div>
           {/* price */}
           <div>
             <h1 className="text-xl font-semibold">Price</h1>{" "}
             <hr className="border border-black mb-4 mt-2" />
-            <h2> ৳30.00 - ৳90.00 </h2>
-            <h2> ৳50.00 - ৳100.00 </h2>
-            <h2> ৳500.00 - ৳1000.00 </h2>
+            <h2 className="mb-3"> ৳30.00 - ৳90.00 </h2>
+            <h2 className="mb-3"> ৳50.00 - ৳100.00 </h2>
+            <h2 className="mb-3"> ৳500.00 - ৳1000.00 </h2>
             <div className="flex gap-2  mt-4">
               <button className="border border-gray-400 px-3 py-1 rounded">
                 ৳ Min
@@ -704,7 +706,7 @@ const Shop = () => {
             <hr className="     border-2 border-[#EAEAEA] hover:border-[#016EEF] duration-300 mb-4 mt-3" />
             {/* card 1 */}
             <div>
-              <div className=" flex justify-between gap-2 text-left border p-2  rounded-md  ">
+              <div className=" flex justify-between gap-2 text-left border p-1  rounded-md  ">
                 <Image
                   src={shoe}
                   width={0}
@@ -714,17 +716,16 @@ const Shop = () => {
                 />
 
                 <div className="py-1">
-                  <h1 className="font-semibold mb-2">Nike</h1>
+                  <h1 className="font-semibold mb-1">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
-                  <Image src={star} alt="ratig" className="mb-2" />
+                  <Image src={star} alt="ratig" className="mb-1 " />
                 </div>
               </div>
             </div>
-            <hr className="     border-2 border-[#EAEAEA] hover:border-[#016EEF] duration-300 mb-4 mt-3" />
             {/* card 2 */}
+            <hr className="     border-2 border-[#EAEAEA] hover:border-[#016EEF] duration-300 mb-4 mt-3" />
             <div>
-              {" "}
-              <div className=" flex justify-between gap-2 text-left border p-2  rounded-md  ">
+              <div className=" flex justify-between gap-2 text-left border p-1  rounded-md  ">
                 <Image
                   src={shoe}
                   width={0}
@@ -734,17 +735,16 @@ const Shop = () => {
                 />
 
                 <div className="py-1">
-                  <h1 className="font-semibold mb-2">Nike</h1>
+                  <h1 className="font-semibold mb-1">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
-                  <Image src={star} alt="ratig" className="mb-2" />
+                  <Image src={star} alt="ratig" className="mb-1 " />
                 </div>
               </div>
             </div>
             {/* card 3 */}
             <hr className="     border-2 border-[#EAEAEA] hover:border-[#016EEF] duration-300 mb-4 mt-3" />
             <div>
-              {" "}
-              <div className=" flex justify-between gap-2 text-left border p-2  rounded-md  ">
+              <div className=" flex justify-between gap-2 text-left border p-1  rounded-md  ">
                 <Image
                   src={shoe}
                   width={0}
@@ -754,17 +754,16 @@ const Shop = () => {
                 />
 
                 <div className="py-1">
-                  <h1 className="font-semibold mb-2">Nike</h1>
+                  <h1 className="font-semibold mb-1">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
-                  <Image src={star} alt="ratig" className="mb-2" />
+                  <Image src={star} alt="ratig" className="mb-1 " />
                 </div>
               </div>
             </div>
             {/* card 4 */}
             <hr className="     border-2 border-[#EAEAEA] hover:border-[#016EEF] duration-300 mb-4 mt-3" />
             <div>
-              {" "}
-              <div className=" flex justify-between gap-2 text-left border p-2  rounded-md  ">
+              <div className=" flex justify-between gap-2 text-left border p-1  rounded-md  ">
                 <Image
                   src={shoe}
                   width={0}
@@ -774,9 +773,9 @@ const Shop = () => {
                 />
 
                 <div className="py-1">
-                  <h1 className="font-semibold mb-2">Nike</h1>
+                  <h1 className="font-semibold mb-1">Nike</h1>
                   <h2 className="mb-1">৳ 300 /pair</h2>
-                  <Image src={star} alt="ratig" className="mb-2" />
+                  <Image src={star} alt="ratig" className="mb-1 " />
                 </div>
               </div>
             </div>
@@ -788,6 +787,7 @@ const Shop = () => {
         <div className="">
           {/* upper filter section */}
           <div className="md:flex justify-between">
+            {/* left filter */}
             <div className="md:flex items-center  gap-2">
               <h2 className="font-semibold"> Filtered by:</h2>
               <button className="border border-gray-400 rounded-full px-2 ">
@@ -800,6 +800,7 @@ const Shop = () => {
               <button className="text-[#016EEF]">Clear All</button>
             </div>
 
+            {/* right filter */}
             <div className=" ">
               <div className="md:flex items-center text-center    w-full gap-2">
                 {/* <h2 className="text-[#585858]">Showing 1–30 of 2537 results</h2> */}
@@ -862,6 +863,7 @@ const Shop = () => {
 
           <div>
             <h1 className="text-2xl ">customar feedback</h1>
+
             <h1 className="text-2xl ">brand</h1>
           </div>
         </div>
